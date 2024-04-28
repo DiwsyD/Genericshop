@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: genericshop
+  datasource:
+    url: jdbc:mysql://localhost:3306/genericshop
+    username: root
+    password: qwer
+  jpa:
+    show-sql: true
+
+
+server:
+  port: 8085
+
+app:
+  api:
+    path:
+      version:
+        v1: "/api/v1"
+      building:
+        createBuilding: "/building"
+        getBuilding: "/building"
+        deleteBuilding: "/building/delete"
+      address:
+        createBuilding: "/address/create"
+
+

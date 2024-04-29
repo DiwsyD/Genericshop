@@ -41,4 +41,6 @@ public class Building {
     @JoinColumn(name = "addresses_id")
     private Address address;
 
+
+
 }

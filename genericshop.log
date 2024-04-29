@@ -226,3 +226,145 @@
 2024-04-29 19:47:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat started on port 8085 (http) with context path ''
 2024-04-29 19:47:32 [main] ERROR c.s.l.g.GenericShopApplication | error
 2024-04-29 19:47:32 [main] ERROR c.s.l.g.GenericShopApplication | fatal
+2024-04-29 19:54:06 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:54:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown initiated...
+2024-04-29 19:54:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown completed.
+2024-04-29 20:07:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29 20:07:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-04-29 20:07:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat initialized with port 8085 (http)
+2024-04-29 20:07:08 [main] INFO  o.a.catalina.core.StandardService | Starting service [Tomcat]
+2024-04-29 20:07:08 [main] INFO  o.a.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-04-29 20:07:08 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2024-04-29 20:07:08 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1218 ms
+2024-04-29 20:07:08 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Starting...
+2024-04-29 20:07:08 [main] INFO  com.zaxxer.hikari.pool.HikariPool | HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72ecbcb3
+2024-04-29 20:07:08 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Start completed.
+2024-04-29 20:07:08 [main] INFO  o.h.jpa.internal.util.LogHelper | HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29 20:07:08 [main] INFO  org.hibernate.Version | HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-29 20:07:08 [main] INFO  o.h.c.i.RegionFactoryInitiator | HHH000026: Second-level cache disabled
+2024-04-29 20:07:08 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo | No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29 20:07:09 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29 20:07:09 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 20:07:10 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory | Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29 20:07:10 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29 20:07:10 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping | 8 mappings in 'requestMappingHandlerMapping'
+2024-04-29 20:07:10 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-29 20:07:10 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-29 20:07:10 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-29 20:07:10 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration | Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-29 20:07:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat started on port 8085 (http) with context path ''
+2024-04-29 20:07:21 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29 20:07:21 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+2024-04-29 20:07:21 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+2024-04-29 20:07:21 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | Detected AcceptHeaderLocaleResolver
+2024-04-29 20:07:21 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | Detected FixedThemeResolver
+2024-04-29 20:07:21 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1007954a
+2024-04-29 20:07:21 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | Detected org.springframework.web.servlet.support.SessionFlashMapManager@520034a
+2024-04-29 20:07:21 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-29 20:07:21 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet | Completed initialization in 2 ms
+2024-04-29 20:07:21 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | POST "/api/v1/building/create", parameters={}
+2024-04-29 20:07:21 [http-nio-8085-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.stepit.lecture.genericshop.building.controller.CreateBuildingController#createBuilding(CreateBuildingRequest)
+2024-04-29 20:07:21 [http-nio-8085-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor | Read "application/json;charset=UTF-8" to [CreateBuildingRequest(price=222.3, square=333.4, address=CreateAddressRequest(city=Kyiv, street=Zhyt (truncated)...]
+2024-04-29 20:07:22 [http-nio-8085-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-04-29 20:07:22 [http-nio-8085-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [Building(id=4, price=222.3, square=333.4, address=Address(id=1, city=Kyiv, street=Zhytomyrska, stree (truncated)...]
+2024-04-29 20:07:22 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | Completed 200 OK
+2024-04-29 20:08:41 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 20:08:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown initiated...
+2024-04-29 20:08:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown completed.
+2024-04-29 20:08:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29 20:08:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2024-04-29 20:08:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat initialized with port 8085 (http)
+2024-04-29 20:08:48 [main] INFO  o.a.catalina.core.StandardService | Starting service [Tomcat]
+2024-04-29 20:08:48 [main] INFO  o.a.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-04-29 20:08:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2024-04-29 20:08:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1270 ms
+2024-04-29 20:08:49 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Starting...
+2024-04-29 20:08:49 [main] INFO  com.zaxxer.hikari.pool.HikariPool | HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76c86567
+2024-04-29 20:08:49 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Start completed.
+2024-04-29 20:08:49 [main] INFO  o.h.jpa.internal.util.LogHelper | HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29 20:08:49 [main] INFO  org.hibernate.Version | HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-29 20:08:49 [main] INFO  o.h.c.i.RegionFactoryInitiator | HHH000026: Second-level cache disabled
+2024-04-29 20:08:49 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo | No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29 20:08:50 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29 20:08:50 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 20:08:50 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory | Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29 20:08:51 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29 20:08:51 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping | 9 mappings in 'requestMappingHandlerMapping'
+2024-04-29 20:08:51 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-29 20:08:51 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-29 20:08:51 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-29 20:08:51 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration | Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-29 20:08:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat started on port 8085 (http) with context path ''
+2024-04-29 20:08:55 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29 20:08:55 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+2024-04-29 20:08:55 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+2024-04-29 20:08:55 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | Detected AcceptHeaderLocaleResolver
+2024-04-29 20:08:55 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | Detected FixedThemeResolver
+2024-04-29 20:08:55 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@676f70dc
+2024-04-29 20:08:55 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | Detected org.springframework.web.servlet.support.SessionFlashMapManager@39cf7f3c
+2024-04-29 20:08:55 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-29 20:08:55 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet | Completed initialization in 1 ms
+2024-04-29 20:08:55 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | GET "/api/v1/buildings", parameters={}
+2024-04-29 20:08:55 [http-nio-8085-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.stepit.lecture.genericshop.building.controller.GetAllBuildingController#getBuilding()
+2024-04-29 20:08:55 [http-nio-8085-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-04-29 20:08:55 [http-nio-8085-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [[Building(id=1, price=999.0, square=40.0, address=Address(id=1, city=Kyiv, street=Zhytomyrska, stree (truncated)...]
+2024-04-29 20:08:55 [http-nio-8085-exec-1] DEBUG o.s.web.servlet.DispatcherServlet | Completed 200 OK
+2024-04-29 20:09:03 [http-nio-8085-exec-4] DEBUG o.s.web.servlet.DispatcherServlet | GET "/api/v1/buildings", parameters={}
+2024-04-29 20:09:03 [http-nio-8085-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.stepit.lecture.genericshop.building.controller.GetAllBuildingController#getBuilding()
+2024-04-29 20:09:03 [http-nio-8085-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-04-29 20:09:03 [http-nio-8085-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [[Building(id=1, price=999.0, square=40.0, address=Address(id=1, city=Kyiv, street=Zhytomyrska, stree (truncated)...]
+2024-04-29 20:09:03 [http-nio-8085-exec-4] DEBUG o.s.web.servlet.DispatcherServlet | Completed 200 OK
+2024-04-29 20:09:03 [http-nio-8085-exec-5] DEBUG o.s.web.servlet.DispatcherServlet | GET "/favicon.ico", parameters={}
+2024-04-29 20:09:03 [http-nio-8085-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping | Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-04-29 20:09:03 [http-nio-8085-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler | Resource not found
+2024-04-29 20:09:03 [http-nio-8085-exec-5] DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver | Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-04-29 20:09:03 [http-nio-8085-exec-5] DEBUG o.s.web.servlet.DispatcherServlet | Completed 404 NOT_FOUND
+2024-04-29 20:09:03 [http-nio-8085-exec-5] DEBUG o.s.web.servlet.DispatcherServlet | "ERROR" dispatch for GET "/error", parameters={}
+2024-04-29 20:09:03 [http-nio-8085-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-04-29 20:09:03 [http-nio-8085-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-04-29 20:09:03 [http-nio-8085-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [{timestamp=Mon Apr 29 20:09:03 EEST 2024, status=404, error=Not Found, path=/favicon.ico}]
+2024-04-29 20:09:03 [http-nio-8085-exec-5] DEBUG o.s.web.servlet.DispatcherServlet | Exiting from "ERROR" dispatch, status 404
+2024-04-29 20:09:20 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 20:09:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown initiated...
+2024-04-29 20:09:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown completed.
+2024-04-29 20:20:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29 20:20:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2024-04-29 20:20:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat initialized with port 8085 (http)
+2024-04-29 20:20:58 [main] INFO  o.a.catalina.core.StandardService | Starting service [Tomcat]
+2024-04-29 20:20:58 [main] INFO  o.a.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-04-29 20:20:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2024-04-29 20:20:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1096 ms
+2024-04-29 20:20:58 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Starting...
+2024-04-29 20:20:58 [main] INFO  com.zaxxer.hikari.pool.HikariPool | HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25791d40
+2024-04-29 20:20:58 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Start completed.
+2024-04-29 20:20:59 [main] INFO  o.h.jpa.internal.util.LogHelper | HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29 20:20:59 [main] INFO  org.hibernate.Version | HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-29 20:20:59 [main] INFO  o.h.c.i.RegionFactoryInitiator | HHH000026: Second-level cache disabled
+2024-04-29 20:20:59 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo | No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29 20:20:59 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29 20:21:00 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 20:21:00 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory | Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29 20:21:00 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29 20:21:00 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping | 9 mappings in 'requestMappingHandlerMapping'
+2024-04-29 20:21:00 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-29 20:21:00 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-29 20:21:00 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-29 20:21:00 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration | Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-29 20:21:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat started on port 8085 (http) with context path ''
+2024-04-29 20:21:06 [http-nio-8085-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29 20:21:06 [http-nio-8085-exec-3] INFO  o.s.web.servlet.DispatcherServlet | Initializing Servlet 'dispatcherServlet'
+2024-04-29 20:21:06 [http-nio-8085-exec-3] DEBUG o.s.web.servlet.DispatcherServlet | Detected StandardServletMultipartResolver
+2024-04-29 20:21:06 [http-nio-8085-exec-3] DEBUG o.s.web.servlet.DispatcherServlet | Detected AcceptHeaderLocaleResolver
+2024-04-29 20:21:06 [http-nio-8085-exec-3] DEBUG o.s.web.servlet.DispatcherServlet | Detected FixedThemeResolver
+2024-04-29 20:21:06 [http-nio-8085-exec-3] DEBUG o.s.web.servlet.DispatcherServlet | Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@35ab83a7
+2024-04-29 20:21:06 [http-nio-8085-exec-3] DEBUG o.s.web.servlet.DispatcherServlet | Detected org.springframework.web.servlet.support.SessionFlashMapManager@77a13162
+2024-04-29 20:21:06 [http-nio-8085-exec-3] DEBUG o.s.web.servlet.DispatcherServlet | enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-29 20:21:06 [http-nio-8085-exec-3] INFO  o.s.web.servlet.DispatcherServlet | Completed initialization in 1 ms
+2024-04-29 20:21:06 [http-nio-8085-exec-3] DEBUG o.s.web.servlet.DispatcherServlet | GET "/api/v1/building?id=3", parameters={masked}
+2024-04-29 20:21:06 [http-nio-8085-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping | Mapped to com.stepit.lecture.genericshop.building.controller.GetBuildingController#getBuilding(Integer)
+2024-04-29 20:21:06 [http-nio-8085-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor | Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-04-29 20:21:06 [http-nio-8085-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor | Writing [BuildingDto(price=111.0, square=10.0, full_address=Kyiv, Kharkivska #35.0)]
+2024-04-29 20:21:06 [http-nio-8085-exec-3] DEBUG o.s.web.servlet.DispatcherServlet | Completed 200 OK
+2024-04-29 20:21:25 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 20:21:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown initiated...
+2024-04-29 20:21:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown completed.

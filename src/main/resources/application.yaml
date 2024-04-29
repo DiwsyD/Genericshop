@@ -36,6 +36,7 @@ app:
       building:
         createBuilding: "/building/create"
         getBuilding: "/building"
+        getBuildings: "/buildings"
         deleteBuilding: "/building/delete"
         updateBuilding: "/building/update"
       address:

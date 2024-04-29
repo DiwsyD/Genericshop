@@ -9,7 +9,7 @@ public class AddressRequestMapper {
         return Address.builder()
                 .city(createAddressRequest.getCity())
                 .street(createAddressRequest.getStreet())
-                .street_num(createAddressRequest.getStreet_num())
+                .streetnum(createAddressRequest.getStreet_num())
                 .build();
     }
 
@@ -17,7 +17,7 @@ public class AddressRequestMapper {
         return CreateAddressRequest.builder()
                 .city(address.getCity())
                 .street(address.getStreet())
-                .street_num(address.getStreet_num())
+                .street_num(address.getStreetnum())
                 .build();
     }
 

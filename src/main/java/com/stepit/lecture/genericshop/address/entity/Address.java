@@ -28,6 +28,6 @@ public class Address {
     @Column(name = "street")
     private String street;
     @Column(name = "streen_num")
-    private Double street_num;
+    private Double streetnum;
 
 }

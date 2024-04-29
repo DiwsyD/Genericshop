@@ -7,6 +7,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.NamedQuery;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.PrimaryKeyJoinColumn;
 import jakarta.persistence.Table;
@@ -21,6 +23,10 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
+@NamedQuery(
+        name= "Building.findCheapBuildings",
+        query = "SELECT b FROM Building b WHERE b.price < :price"
+)
 public class Building {
 
     @Id
@@ -32,7 +38,7 @@ public class Building {
     @Column(name = "square")
     private Double square;
     @OneToOne(targetEntity = Address.class, cascade = CascadeType.ALL)
-    @PrimaryKeyJoinColumn(name = "addresses_id")
+    @JoinColumn(name = "addresses_id")
     private Address address;
 
 }

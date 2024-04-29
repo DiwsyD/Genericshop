@@ -9,6 +9,22 @@ spring:
     show-sql: true
 
 
+logging:
+  level:
+    com.stepit.lecture.genericshop: error
+    org.springframework.web: debug
+
+  pattern:
+    console: "%d{MM-dd HH:mm:ss} [%thread] %-5level %logger{36} | %msg%n"
+    file: "%d{YYYY-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} | %msg%n"
+
+  file:
+    name: genericshop.log
+    append: false
+    max-size: 10MB
+    max-history: 5
+
+
 server:
   port: 8085
 
@@ -18,10 +34,11 @@ app:
       version:
         v1: "/api/v1"
       building:
-        createBuilding: "/building"
+        createBuilding: "/building/create"
         getBuilding: "/building"
         deleteBuilding: "/building/delete"
+        updateBuilding: "/building/update"
       address:
-        createBuilding: "/address/create"
+        createAddress: "/address/create"
 
 

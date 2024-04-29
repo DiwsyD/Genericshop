@@ -1,0 +1,228 @@
+2024-04-29 19:41:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29 19:41:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2024-04-29 19:41:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat initialized with port 8085 (http)
+2024-04-29 19:41:42 [main] INFO  o.a.catalina.core.StandardService | Starting service [Tomcat]
+2024-04-29 19:41:42 [main] INFO  o.a.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-04-29 19:41:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2024-04-29 19:41:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1401 ms
+2024-04-29 19:41:42 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Starting...
+2024-04-29 19:41:42 [main] INFO  com.zaxxer.hikari.pool.HikariPool | HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26e0d39c
+2024-04-29 19:41:42 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Start completed.
+2024-04-29 19:41:42 [main] INFO  o.h.jpa.internal.util.LogHelper | HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29 19:41:42 [main] INFO  org.hibernate.Version | HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-29 19:41:42 [main] INFO  o.h.c.i.RegionFactoryInitiator | HHH000026: Second-level cache disabled
+2024-04-29 19:41:43 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo | No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29 19:41:43 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29 19:41:44 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:41:44 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory | Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29 19:41:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29 19:41:44 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration | Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-29 19:41:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat started on port 8085 (http) with context path ''
+2024-04-29 19:41:44 [main] ERROR c.s.l.g.GenericShopApplication | error
+2024-04-29 19:41:44 [main] ERROR c.s.l.g.GenericShopApplication | fatal
+2024-04-29 19:42:11 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:42:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown initiated...
+2024-04-29 19:42:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown completed.
+2024-04-29 19:42:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29 19:42:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-04-29 19:42:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat initialized with port 8085 (http)
+2024-04-29 19:42:22 [main] INFO  o.a.catalina.core.StandardService | Starting service [Tomcat]
+2024-04-29 19:42:22 [main] INFO  o.a.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-04-29 19:42:22 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2024-04-29 19:42:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1082 ms
+2024-04-29 19:42:22 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Starting...
+2024-04-29 19:42:22 [main] INFO  com.zaxxer.hikari.pool.HikariPool | HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72ecbcb3
+2024-04-29 19:42:22 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Start completed.
+2024-04-29 19:42:22 [main] INFO  o.h.jpa.internal.util.LogHelper | HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29 19:42:23 [main] INFO  org.hibernate.Version | HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-29 19:42:23 [main] INFO  o.h.c.i.RegionFactoryInitiator | HHH000026: Second-level cache disabled
+2024-04-29 19:42:23 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo | No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29 19:42:23 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29 19:42:24 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:42:24 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory | Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29 19:42:24 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29 19:42:24 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration | Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-29 19:42:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat started on port 8085 (http) with context path ''
+2024-04-29 19:42:24 [main] ERROR c.s.l.g.GenericShopApplication | error
+2024-04-29 19:42:24 [main] ERROR c.s.l.g.GenericShopApplication | fatal
+2024-04-29 19:43:00 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:43:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown initiated...
+2024-04-29 19:43:00 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown completed.
+2024-04-29 19:43:04 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29 19:43:04 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2024-04-29 19:43:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat initialized with port 8085 (http)
+2024-04-29 19:43:05 [main] INFO  o.a.catalina.core.StandardService | Starting service [Tomcat]
+2024-04-29 19:43:05 [main] INFO  o.a.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-04-29 19:43:05 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2024-04-29 19:43:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1375 ms
+2024-04-29 19:43:05 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Starting...
+2024-04-29 19:43:05 [main] INFO  com.zaxxer.hikari.pool.HikariPool | HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@22d477c2
+2024-04-29 19:43:05 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Start completed.
+2024-04-29 19:43:05 [main] INFO  o.h.jpa.internal.util.LogHelper | HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29 19:43:05 [main] INFO  org.hibernate.Version | HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-29 19:43:05 [main] INFO  o.h.c.i.RegionFactoryInitiator | HHH000026: Second-level cache disabled
+2024-04-29 19:43:05 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo | No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29 19:43:06 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29 19:43:06 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:43:07 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory | Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29 19:43:07 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29 19:43:07 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration | Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-29 19:43:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat started on port 8085 (http) with context path ''
+2024-04-29 19:43:07 [main] ERROR c.s.l.g.GenericShopApplication | error
+2024-04-29 19:43:07 [main] ERROR c.s.l.g.GenericShopApplication | fatal
+2024-04-29 19:46:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:46:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown initiated...
+2024-04-29 19:46:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown completed.
+2024-04-29 19:46:06 [main] INFO  o.a.catalina.core.StandardService | Starting service [Tomcat]
+2024-04-29 19:46:06 [main] INFO  o.a.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-04-29 19:46:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2024-04-29 19:46:06 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Starting...
+2024-04-29 19:46:06 [main] INFO  com.zaxxer.hikari.pool.HikariPool | HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39832280
+2024-04-29 19:46:06 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Start completed.
+2024-04-29 19:46:06 [main] INFO  o.h.jpa.internal.util.LogHelper | HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29 19:46:06 [main] INFO  org.hibernate.Version | HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-29 19:46:06 [main] INFO  o.h.c.i.RegionFactoryInitiator | HHH000026: Second-level cache disabled
+2024-04-29 19:46:07 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29 19:46:08 [main] ERROR c.s.l.g.GenericShopApplication | error
+2024-04-29 19:46:08 [main] ERROR c.s.l.g.GenericShopApplication | fatal
+2024-04-29 19:46:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown initiated...
+2024-04-29 19:46:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown completed.
+2024-04-29 19:46:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29 19:46:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-04-29 19:46:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat initialized with port 8085 (http)
+2024-04-29 19:46:22 [main] INFO  o.a.catalina.core.StandardService | Starting service [Tomcat]
+2024-04-29 19:46:22 [main] INFO  o.a.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-04-29 19:46:22 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2024-04-29 19:46:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1095 ms
+2024-04-29 19:46:22 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Starting...
+2024-04-29 19:46:23 [main] INFO  com.zaxxer.hikari.pool.HikariPool | HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6df4af5
+2024-04-29 19:46:23 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Start completed.
+2024-04-29 19:46:23 [main] INFO  o.h.jpa.internal.util.LogHelper | HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29 19:46:23 [main] INFO  org.hibernate.Version | HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-29 19:46:23 [main] INFO  o.h.c.i.RegionFactoryInitiator | HHH000026: Second-level cache disabled
+2024-04-29 19:46:23 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo | No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29 19:46:24 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29 19:46:24 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:46:24 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory | Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29 19:46:24 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29 19:46:25 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration | Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-29 19:46:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat started on port 8085 (http) with context path ''
+2024-04-29 19:46:25 [main] ERROR c.s.l.g.GenericShopApplication | error
+2024-04-29 19:46:25 [main] ERROR c.s.l.g.GenericShopApplication | fatal
+2024-04-29 19:46:50 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:46:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown initiated...
+2024-04-29 19:46:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown completed.
+2024-04-29 19:46:52 [main] INFO  c.s.l.g.GenericShopApplication | Starting GenericShopApplication using Java 21.0.1 with PID 12260 (E:\IT_Step_Java_Course\Lectures\Module13_Spring\genericshop\target\classes started by Owner in E:\IT_Step_Java_Course\Lectures\Module13_Spring\genericshop)
+2024-04-29 19:46:52 [main] DEBUG c.s.l.g.GenericShopApplication | Running with Spring Boot v3.2.1, Spring v6.1.2
+2024-04-29 19:46:52 [main] INFO  c.s.l.g.GenericShopApplication | No active profile set, falling back to 1 default profile: "default"
+2024-04-29 19:46:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29 19:46:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2024-04-29 19:46:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat initialized with port 8085 (http)
+2024-04-29 19:46:54 [main] INFO  o.a.catalina.core.StandardService | Starting service [Tomcat]
+2024-04-29 19:46:54 [main] INFO  o.a.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-04-29 19:46:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2024-04-29 19:46:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1216 ms
+2024-04-29 19:46:54 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Starting...
+2024-04-29 19:46:54 [main] INFO  com.zaxxer.hikari.pool.HikariPool | HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7abeabe9
+2024-04-29 19:46:54 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Start completed.
+2024-04-29 19:46:54 [main] INFO  o.h.jpa.internal.util.LogHelper | HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29 19:46:54 [main] INFO  org.hibernate.Version | HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-29 19:46:54 [main] INFO  o.h.c.i.RegionFactoryInitiator | HHH000026: Second-level cache disabled
+2024-04-29 19:46:54 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo | No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29 19:46:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29 19:46:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:46:56 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory | Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29 19:46:56 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29 19:46:56 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration | Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-29 19:46:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat started on port 8085 (http) with context path ''
+2024-04-29 19:46:56 [main] INFO  c.s.l.g.GenericShopApplication | Started GenericShopApplication in 4.231 seconds (process running for 4.704)
+2024-04-29 19:46:56 [main] TRACE c.s.l.g.GenericShopApplication | trace
+2024-04-29 19:46:56 [main] DEBUG c.s.l.g.GenericShopApplication | debug
+2024-04-29 19:46:56 [main] INFO  c.s.l.g.GenericShopApplication | info
+2024-04-29 19:46:56 [main] WARN  c.s.l.g.GenericShopApplication | warn
+2024-04-29 19:46:56 [main] ERROR c.s.l.g.GenericShopApplication | error
+2024-04-29 19:46:56 [main] ERROR c.s.l.g.GenericShopApplication | fatal
+2024-04-29 19:47:10 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:47:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown initiated...
+2024-04-29 19:47:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown completed.
+2024-04-29 19:47:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29 19:47:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2024-04-29 19:47:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat initialized with port 8085 (http)
+2024-04-29 19:47:13 [main] INFO  o.a.catalina.core.StandardService | Starting service [Tomcat]
+2024-04-29 19:47:13 [main] INFO  o.a.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-04-29 19:47:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2024-04-29 19:47:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1237 ms
+2024-04-29 19:47:13 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Starting...
+2024-04-29 19:47:14 [main] INFO  com.zaxxer.hikari.pool.HikariPool | HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@251c8145
+2024-04-29 19:47:14 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Start completed.
+2024-04-29 19:47:14 [main] INFO  o.h.jpa.internal.util.LogHelper | HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29 19:47:14 [main] INFO  org.hibernate.Version | HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-29 19:47:14 [main] INFO  o.h.c.i.RegionFactoryInitiator | HHH000026: Second-level cache disabled
+2024-04-29 19:47:14 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo | No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29 19:47:15 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29 19:47:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:47:15 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory | Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29 19:47:15 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29 19:47:16 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping | 
+	c.s.l.g.a.c.CreateAddressController:
+	{POST [/api/v1/address/create]}: createBuilding(CreateAddressRequest)
+2024-04-29 19:47:16 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping | 
+	c.s.l.g.a.c.TestController:
+	{GET [/api/v1/test]}: getTest()
+2024-04-29 19:47:16 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping | 
+	c.s.l.g.b.c.CreateBuildingController:
+	{POST [/api/v1/building/create]}: createBuilding(CreateBuildingRequest)
+2024-04-29 19:47:16 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping | 
+	c.s.l.g.b.c.DeleteBuildingController:
+	{DELETE [/api/v1/building/delete]}: deleteBuilding(DeleteBuildingRequest)
+2024-04-29 19:47:16 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping | 
+	c.s.l.g.b.c.GetBuildingController:
+	{GET [/api/v1/building]}: getBuilding(Integer)
+2024-04-29 19:47:16 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping | 
+	c.s.l.g.b.c.UpdateBuildingController:
+	{POST [/api/v1/building/update]}: updateBuilding(UpdateBuildingRequest)
+2024-04-29 19:47:16 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping | 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2024-04-29 19:47:16 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping | 8 mappings in 'requestMappingHandlerMapping'
+2024-04-29 19:47:16 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping | Detected 0 mappings in 'beanNameHandlerMapping'
+2024-04-29 19:47:16 [main] TRACE o.s.w.s.f.s.RouterFunctionMapping | 0 RouterFunction(s) in 'routerFunctionMapping'
+2024-04-29 19:47:16 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping | Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-04-29 19:47:16 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping | Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-04-29 19:47:16 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-29 19:47:16 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-29 19:47:16 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-29 19:47:16 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration | Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-29 19:47:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat started on port 8085 (http) with context path ''
+2024-04-29 19:47:16 [main] ERROR c.s.l.g.GenericShopApplication | error
+2024-04-29 19:47:16 [main] ERROR c.s.l.g.GenericShopApplication | fatal
+2024-04-29 19:47:25 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:47:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown initiated...
+2024-04-29 19:47:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Shutdown completed.
+2024-04-29 19:47:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29 19:47:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate | Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-04-29 19:47:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat initialized with port 8085 (http)
+2024-04-29 19:47:29 [main] INFO  o.a.catalina.core.StandardService | Starting service [Tomcat]
+2024-04-29 19:47:29 [main] INFO  o.a.catalina.core.StandardEngine | Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-04-29 19:47:29 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] | Initializing Spring embedded WebApplicationContext
+2024-04-29 19:47:29 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext | Root WebApplicationContext: initialization completed in 1110 ms
+2024-04-29 19:47:29 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Starting...
+2024-04-29 19:47:30 [main] INFO  com.zaxxer.hikari.pool.HikariPool | HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a05dd30
+2024-04-29 19:47:30 [main] INFO  com.zaxxer.hikari.HikariDataSource | HikariPool-1 - Start completed.
+2024-04-29 19:47:30 [main] INFO  o.h.jpa.internal.util.LogHelper | HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29 19:47:30 [main] INFO  org.hibernate.Version | HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-29 19:47:30 [main] INFO  o.h.c.i.RegionFactoryInitiator | HHH000026: Second-level cache disabled
+2024-04-29 19:47:30 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo | No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29 19:47:31 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator | HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29 19:47:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean | Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 19:47:31 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory | Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29 19:47:31 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration | spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29 19:47:31 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping | 8 mappings in 'requestMappingHandlerMapping'
+2024-04-29 19:47:31 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping | Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-29 19:47:32 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter | ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-29 19:47:32 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver | ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-29 19:47:32 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration | Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-29 19:47:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer | Tomcat started on port 8085 (http) with context path ''
+2024-04-29 19:47:32 [main] ERROR c.s.l.g.GenericShopApplication | error
+2024-04-29 19:47:32 [main] ERROR c.s.l.g.GenericShopApplication | fatal

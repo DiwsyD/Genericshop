@@ -7,13 +7,14 @@ import com.stepit.lecture.genericshop.address.request.CreateAddressRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
 public class AddressService {
 
-    private AddressRepository addressRepository;
+    private final AddressRepository addressRepository;
 
     public Address addAddress(CreateAddressRequest createAddressRequest) {
         Address address = AddressRequestMapper.mapAddressRequestToAddress(createAddressRequest);
@@ -29,4 +30,11 @@ public class AddressService {
         addressRepository.deleteById(id);
     }
 
+    public Address findExisting(Address address) {
+        Optional<Address> byCityAndStreetAndStreetnum = addressRepository
+                .findByCityAndStreetAndStreetnum(address.getCity(), address.getStreet(), address.getStreetnum());
+        //if found -> return object with id
+        //else -> return object without id
+        return byCityAndStreetAndStreetnum.orElse(address);
+    }
 }

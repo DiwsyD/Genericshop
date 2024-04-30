@@ -1,7 +1,7 @@
 package com.stepit.lecture.genericshop.address.controller;
 
 import com.stepit.lecture.genericshop.address.dto.AddressDto;
-import com.stepit.lecture.genericshop.address.request.CreateAddressRequest;
+import com.stepit.lecture.genericshop.address.request.UpdateAddressRequest;
 import com.stepit.lecture.genericshop.address.service.AddressService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -16,16 +16,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("${app.api.path.version.v1}")
 @RequiredArgsConstructor
-public class CreateAddressController {
+public class UpdateAddressController {
 
     private final AddressService addressService;
 
     @SuppressWarnings("unused")
-    @PostMapping("${app.api.path.address.createAddress}")
-    public ResponseEntity<AddressDto> createAddress(
-            @RequestBody CreateAddressRequest createAddressRequest
+    @PostMapping("${app.api.path.address.updateAddress}")
+    public ResponseEntity<AddressDto> updateAddress(
+            @RequestBody UpdateAddressRequest updateAddressRequest
     ) {
-        AddressDto address = addressService.createAddress(createAddressRequest);
+        AddressDto address = addressService.updateAddress(updateAddressRequest);
         return new ResponseEntity<>(address, HttpStatus.OK);
     }
 

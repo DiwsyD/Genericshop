@@ -5,8 +5,9 @@ import lombok.Data;
 
 @Data
 @Builder
-public class CreateAddressRequest {
+public class UpdateAddressRequest {
 
+    private Integer id;
     private String city;
     private String street;
     private Double streetnum;

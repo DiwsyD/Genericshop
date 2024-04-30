@@ -9,15 +9,7 @@ public class AddressRequestMapper {
         return Address.builder()
                 .city(createAddressRequest.getCity())
                 .street(createAddressRequest.getStreet())
-                .streetnum(createAddressRequest.getStreet_num())
-                .build();
-    }
-
-    public static CreateAddressRequest mapAddressToAddressRequest(Address address) {
-        return CreateAddressRequest.builder()
-                .city(address.getCity())
-                .street(address.getStreet())
-                .street_num(address.getStreetnum())
+                .streetnum(createAddressRequest.getStreetnum())
                 .build();
     }
 

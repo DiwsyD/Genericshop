@@ -1,15 +1,12 @@
 package com.stepit.lecture.genericshop.building.controller;
 
 import com.stepit.lecture.genericshop.building.dto.BuildingDto;
-import com.stepit.lecture.genericshop.building.entity.Building;
 import com.stepit.lecture.genericshop.building.service.BuildingService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,6 +19,7 @@ public class GetBuildingController {
 
     private final BuildingService buildingService;
 
+    @SuppressWarnings("unused")
     @GetMapping("${app.api.path.building.getBuilding}")
     public ResponseEntity<BuildingDto> getBuilding(
             @RequestParam Integer id

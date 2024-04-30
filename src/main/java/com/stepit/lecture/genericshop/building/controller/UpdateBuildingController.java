@@ -1,7 +1,6 @@
 package com.stepit.lecture.genericshop.building.controller;
 
-import com.stepit.lecture.genericshop.building.entity.Building;
-import com.stepit.lecture.genericshop.building.request.CreateBuildingRequest;
+import com.stepit.lecture.genericshop.building.dto.BuildingDto;
 import com.stepit.lecture.genericshop.building.request.UpdateBuildingRequest;
 import com.stepit.lecture.genericshop.building.service.BuildingService;
 import lombok.RequiredArgsConstructor;
@@ -21,11 +20,12 @@ public class UpdateBuildingController {
 
     private final BuildingService buildingService;
 
+    @SuppressWarnings("unused")
     @PostMapping("${app.api.path.building.updateBuilding}")
-    public ResponseEntity<Building> updateBuilding(
+    public ResponseEntity<BuildingDto> updateBuilding(
             @RequestBody UpdateBuildingRequest updateBuildingRequest
     ) {
-        Building building = buildingService.updateBuildingByRequest(updateBuildingRequest);
+        BuildingDto building = buildingService.updateBuildingByRequest(updateBuildingRequest);
         return new ResponseEntity<>(building, HttpStatus.OK);
     }
 

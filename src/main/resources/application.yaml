@@ -42,5 +42,7 @@ app:
         getAddresses: "/addresses"
         updateAddress: "/address/update"
         deleteAddress: "/address/delete"
+      user:
+        getUser: "/user"
 
 

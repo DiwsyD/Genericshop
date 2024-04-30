@@ -1,5 +1,6 @@
 package com.stepit.lecture.genericshop.building.dto;
 
+import com.stepit.lecture.genericshop.address.dto.AddressDto;
 import lombok.Builder;
 import lombok.Data;
 
@@ -7,8 +8,9 @@ import lombok.Data;
 @Builder
 public class BuildingDto {
 
+    private Integer id;
     private Double price;
     private Double square;
-    private String full_address;
+    private AddressDto full_address;
 
 }

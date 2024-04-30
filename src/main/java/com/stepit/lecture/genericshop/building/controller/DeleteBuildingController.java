@@ -1,11 +1,9 @@
 package com.stepit.lecture.genericshop.building.controller;
 
-import com.stepit.lecture.genericshop.building.entity.Building;
 import com.stepit.lecture.genericshop.building.request.DeleteBuildingRequest;
 import com.stepit.lecture.genericshop.building.service.BuildingService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,12 +18,13 @@ public class DeleteBuildingController {
 
     private final BuildingService buildingService;
 
+    @SuppressWarnings("unused")
     @DeleteMapping("${app.api.path.building.deleteBuilding}")
-    public ResponseEntity deleteBuilding(
+    public ResponseEntity<Void> deleteBuilding(
             @RequestBody DeleteBuildingRequest deleteBuildingRequest
     ) {
         buildingService.deleteBuildingByRequest(deleteBuildingRequest);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return ResponseEntity.ok().build();
     }
 
 }

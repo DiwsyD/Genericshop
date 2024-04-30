@@ -11,18 +11,15 @@ spring:
 
 logging:
   level:
-    com.stepit.lecture.genericshop: error
-    org.springframework.web: debug
+    com.stepit.lecture.genericshop: debug
 
   pattern:
-    console: "%d{MM-dd HH:mm:ss} [%thread] %-5level %logger{36} | %msg%n"
+    console: "%d{YYYY-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} | %msg%n"
     file: "%d{YYYY-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} | %msg%n"
 
   file:
     name: genericshop.log
     append: false
-    max-size: 10MB
-    max-history: 5
 
 
 server:
@@ -41,5 +38,9 @@ app:
         updateBuilding: "/building/update"
       address:
         createAddress: "/address/create"
+        getAddress: "/address"
+        getAddresses: "/addresses"
+        updateAddress: "/address/update"
+        deleteAddress: "/address/delete"
 
 

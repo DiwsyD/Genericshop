@@ -1,13 +1,11 @@
 package com.stepit.lecture.genericshop.address.controller;
 
-import com.stepit.lecture.genericshop.address.dto.AddressDto;
-import com.stepit.lecture.genericshop.address.request.CreateAddressRequest;
+import com.stepit.lecture.genericshop.address.request.DeleteAddressRequest;
 import com.stepit.lecture.genericshop.address.service.AddressService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,17 +14,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("${app.api.path.version.v1}")
 @RequiredArgsConstructor
-public class CreateAddressController {
+public class DeleteAddressController {
 
     private final AddressService addressService;
 
     @SuppressWarnings("unused")
-    @PostMapping("${app.api.path.address.createAddress}")
-    public ResponseEntity<AddressDto> createAddress(
-            @RequestBody CreateAddressRequest createAddressRequest
+    @DeleteMapping("${app.api.path.address.deleteAddress}")
+    public ResponseEntity<Void> deleteAddress(
+            @RequestBody DeleteAddressRequest deleteAddressRequest
     ) {
-        AddressDto address = addressService.createAddress(createAddressRequest);
-        return new ResponseEntity<>(address, HttpStatus.OK);
+        addressService.deleteAddress(deleteAddressRequest);
+        return ResponseEntity.ok().build();
     }
 
 }

@@ -1,6 +1,6 @@
 package com.stepit.lecture.genericshop.building.controller;
 
-import com.stepit.lecture.genericshop.building.entity.Building;
+import com.stepit.lecture.genericshop.building.dto.BuildingDto;
 import com.stepit.lecture.genericshop.building.request.CreateBuildingRequest;
 import com.stepit.lecture.genericshop.building.service.BuildingService;
 import lombok.RequiredArgsConstructor;
@@ -20,11 +20,12 @@ public class CreateBuildingController {
 
     private final BuildingService buildingService;
 
+    @SuppressWarnings("unused")
     @PostMapping("${app.api.path.building.createBuilding}")
-    public ResponseEntity<Building> createBuilding(
+    public ResponseEntity<BuildingDto> createBuilding(
             @RequestBody CreateBuildingRequest createBuildingRequest
     ) {
-        Building building = buildingService.createBuilding(createBuildingRequest);
+        BuildingDto building = buildingService.createBuilding(createBuildingRequest);
         return new ResponseEntity<>(building, HttpStatus.OK);
     }
 

@@ -13,9 +13,9 @@ import com.stepit.lecture.genericshop.building.request.DeleteBuildingRequest;
 import com.stepit.lecture.genericshop.building.request.UpdateBuildingRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.security.InvalidParameterException;
 import java.util.List;
 import java.util.Optional;
 
@@ -25,45 +25,58 @@ import java.util.Optional;
 public class BuildingService {
 
     private final BuildingRepository buildingRepository;
-    private final AddressService addressService;
-    //@Autowired
-    private final BuildingRequestMapper buildingRequestMapper;
 
+    private final AddressService addressService;
+
+    private final BuildingRequestMapper buildingRequestMapper;
     private final BuildingDtoMapper buildingDtoMapper;
 
-    public BuildingDto getBuilding(Integer id) {
-        log.info("Building Service Invoked");
-        Building building = buildingRepository.findById(id)
-                .orElseGet(() -> Building.builder().build());
-        return buildingDtoMapper.mapBuildingToBuildingDto(building);
-    }
-
-    public List<Building> getAllBuildings() {
-        return buildingRepository.findAll();
-    }
-
-    public Building createBuilding(
-            CreateBuildingRequest createBuildingRequest
-    ) {
+    /**
+     * Do not consider this approach as a Correct and Only way
+     * to make logic of creation new object with inner (join) object(s).
+     * [This approach is for educational purposes only]
+     *
+     * @param createBuildingRequest - necessary data to create new building with New or existing address
+     * @return BuildingDto - representation of building entity.
+     */
+    public BuildingDto createBuilding(CreateBuildingRequest createBuildingRequest) {
         Address address = AddressRequestMapper
                 .mapAddressRequestToAddress(createBuildingRequest.getAddress());
         address = addressService.findExisting(address);
         Building newBuilding =
                 buildingRequestMapper.mapCreateBuildingRequestToBuilding(createBuildingRequest, address);
-        return buildingRepository.save(newBuilding);
+        Building savedBuilding = buildingRepository.save(newBuilding);
+        return buildingDtoMapper.mapBuildingToBuildingDto(savedBuilding);
+    }
+
+    public BuildingDto getBuilding(Integer id) {
+        Building building = buildingRepository.findById(id)
+                .orElseGet(() -> Building.builder().build());
+        return buildingDtoMapper.mapBuildingToBuildingDto(building);
+    }
+
+    public List<BuildingDto> getAllBuildings() {
+        List<Building> buildings = buildingRepository.findAll();
+        return buildingDtoMapper.mapBuildingsToBuildingDtos(buildings);
+    }
+
+    public BuildingDto updateBuildingByRequest(UpdateBuildingRequest updateBuildingRequest) {
+        Integer buildingId = updateBuildingRequest.getId();
+        Optional<Building> optBuilding = buildingRepository.findById(buildingId);
+
+        if (optBuilding.isEmpty())
+            throw new InvalidParameterException(String.format("Couldn't find building by ID [%d]", buildingId));
+
+        Building building = optBuilding.get();
+        building.setPrice(updateBuildingRequest.getPrice());
+        building.setSquare(updateBuildingRequest.getSquare());
+
+        Building updatedBuilding = buildingRepository.save(building);
+        return buildingDtoMapper.mapBuildingToBuildingDto(updatedBuilding);
     }
 
     public void deleteBuildingByRequest(DeleteBuildingRequest deleteBuildingRequest) {
         buildingRepository.deleteById(deleteBuildingRequest.getId());
     }
 
-    public Building updateBuildingByRequest(UpdateBuildingRequest updateBuildingRequest) {
-
-        return null;
-//        Building building = getBuilding(updateBuildingRequest.getId());
-//        building.setPrice(updateBuildingRequest.getPrice());
-//        building.setSquare(updateBuildingRequest.getSquare());
-//
-//        return buildingRepository.save(building);
-    }
 }

@@ -73,3 +73,21 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+insert into users (`email`, `password`, `role`) values ("admin@email.com", "admin", "ADMIN");
+insert into users (`email`, `password`, `role`) values ("user@email.com", "user", "USER");
+insert into users (`email`, `password`, `role`) values ("manager@email.com", "manager", "MANAGER");
+
+INSERT INTO addresses (`city`,`street`,`streen_num`)
+VALUES('Kyiv','Zhytomyrska',35);
+INSERT INTO addresses (`city`,`street`,`streen_num`)
+VALUES('Kyiv','Lvivska',35);
+INSERT INTO addresses (`city`,`street`,`streen_num`)
+VALUES('Kyiv','Kharkivska',35);
+
+INSERT INTO buildings (price,square, addresses_id)
+VALUES (999,40,1);
+INSERT INTO buildings (price,square, addresses_id)
+VALUES (555,25,2);
+INSERT INTO buildings (price,square, addresses_id)
+VALUES (111,10,3);

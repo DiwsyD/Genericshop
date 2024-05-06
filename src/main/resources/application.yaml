@@ -25,6 +25,10 @@ logging:
 server:
   port: 8085
 
+eureka:
+  client:
+    enabled: true
+
 app:
   api:
     path:

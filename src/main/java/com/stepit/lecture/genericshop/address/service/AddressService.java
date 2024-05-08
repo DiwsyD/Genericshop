@@ -2,6 +2,7 @@ package com.stepit.lecture.genericshop.address.service;
 
 import com.stepit.lecture.genericshop.address.dto.AddressDto;
 import com.stepit.lecture.genericshop.address.entity.Address;
+import com.stepit.lecture.genericshop.address.exception.AddressesNotFoundException;
 import com.stepit.lecture.genericshop.address.mapper.AddressDtoMapper;
 import com.stepit.lecture.genericshop.address.mapper.AddressRequestMapper;
 import com.stepit.lecture.genericshop.address.persistence.AddressRepository;
@@ -11,7 +12,6 @@ import com.stepit.lecture.genericshop.address.request.UpdateAddressRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.security.InvalidParameterException;
 import java.util.List;
 import java.util.Optional;
 
@@ -30,8 +30,10 @@ public class AddressService {
 
     public AddressDto getAddress(Integer id) {
         Optional<Address> byId = addressRepository.findById(id);
-        if (byId.isEmpty())
-            throw new InvalidParameterException(String.format("Couldn't find address by ID [%d]", id));
+        if (byId.isEmpty()) {
+            String details = String.format("Address with id [%d] couldn't be found", id);
+            throw new AddressesNotFoundException(details);
+        }
         return addressDtoMapper.mapAddressToAddressDto(byId.get());
     }
 
@@ -46,7 +48,7 @@ public class AddressService {
         Optional<Address> optAddress = addressRepository.findById(addressId);
 
         if (optAddress.isEmpty())
-            throw new InvalidParameterException(String.format("Couldn't find address by ID [%d]", addressId));
+            throw new AddressesNotFoundException(String.valueOf(addressId));
 
         Address address = optAddress.get();
         address.setCity(updateAddressRequest.getCity());
